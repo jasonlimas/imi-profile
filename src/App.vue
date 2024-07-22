@@ -1,14 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app" class="flex flex-col min-h-screen">
     <SiteHeader />
-    <main class="min-h-screen">
-      <div class="container mx-auto py-20">
-        <h1 class="text-center text-3xl mb-4">Welcome to the Company Profile</h1>
-        <p class="text-center">This is a temporary content section to visualize the footer.</p>
-        <div class="my-40">
-          <p class="text-center">Scroll down to see the footer below.</p>
-        </div>
-      </div>
+    <main class="flex-grow pt-16"> <!-- Adjusted padding here -->
+      <router-view />
     </main>
     <SiteFooter />
   </div>
